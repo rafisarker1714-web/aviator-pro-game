@@ -1,0 +1,21 @@
+.admin-panel{padding:16px;max-width:600px;margin:0 auto;color:#fff;background:#0f1226;min-height:100vh}
+.admin-header h2{margin:0;font-size:24px}
+.admin-header p{opacity:.6;font-size:13px}
+.admin-stats{display:flex;gap:10px;margin:16px 0}
+.stat-card{flex:1;background:#1a1e3a;padding:12px;border-radius:12px;display:flex;flex-direction:column}
+.stat-card span{font-size:12px;opacity:.7}
+.stat-card b{font-size:20px;margin-top:4px}
+.admin-tabs{display:flex;gap:8px;margin-bottom:12px}
+.admin-tabs button{flex:1;padding:10px;border:none;border-radius:10px;background:#1a1e3a;color:#fff}
+.admin-tabs button.active{background:#ff2d55}
+.req-card{background:#1a1e3a;padding:12px;border-radius:12px;margin-bottom:10px;display:flex;flex-direction:column;gap:6px}
+.req-card small{display:block;opacity:.6;font-size:11px}
+.amt{font-size:18px;color:#ffd700}
+.status{font-size:11px;padding:3px 8px;border-radius:20px;width:fit-content;background:#333}
+.status.approved{background:#1db954}
+.status.rejected{background:#ff2d55}
+.actions{display:flex;gap:8px;margin-top:4px}
+.actions button{flex:1;padding:8px;border:none;border-radius:8px;color:#fff;font-weight:700}
+.approve{background:#1db954}
+.reject{background:#ff2d55}
+.empty{text-align:center;opacity:.6;margin-top:30px}

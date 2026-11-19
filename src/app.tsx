@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/header";
 import Wallet from "./components/Wallet/Wallet";
+import Admin from "./components/Admin/Admin";
 import Login from "./components/Auth/Login";
 import BetsUsers from "./components/bet-users";
 import Main from "./components/Main";
@@ -13,6 +14,7 @@ import Context from "./context";
 function App() {
   const { unityLoading, currentProgress, rechargeState, errorBackend } =
     React.useContext(Context);
+  if (window.location.pathname === '/admin') return <Admin />;
   return (
     <div className="main-container">
       {errorBackend && (
