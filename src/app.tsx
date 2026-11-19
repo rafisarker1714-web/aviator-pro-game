@@ -1,5 +1,7 @@
 import React from "react";
 import Header from "./components/header";
+import Wallet from "./components/Wallet/Wallet";
+import Login from "./components/Auth/Login";
 import BetsUsers from "./components/bet-users";
 import Main from "./components/Main";
 // import { useCrashContext } from "./components/Main/context";
@@ -56,6 +58,8 @@ function App() {
           </div>
         </div>
       )}
+      <Login />
+      <Wallet />
       <Header />
       <div className="game-container">
         <BetsUsers />

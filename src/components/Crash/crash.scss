@@ -24,8 +24,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 150px;
-  height: 150px;
+  width: 58px;
+  height: 58px;
   animation: rotate 1.5s linear infinite;
   margin-bottom: 10px;
 
@@ -51,4 +51,18 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+/* Full Screen - bahire jabe na */
+.crash {
+  overflow: hidden !important;
+  width: 100% !important;
+  position: relative !important;
+}
+/* Sada rekha - tomar screenshot er moto */
+.crash::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-conic-gradient(from 0deg at 0% 100%, rgba(255,255,255,0.07) 0deg 4deg, transparent 4deg 12deg);
+  pointer-events: none;
 }
